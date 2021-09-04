@@ -1,0 +1,24 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+  {% if title %}
+  <title>Jubaland quality - {{title}}</title>
+  {% else %}
+    <title> Jubaland quality </title>
+  {% endif %}
+
+</head>
+<body>
+    {% include "navbar.html" %}
+    
+    {% block content %}{%endblock%}
+    
+    {% include "footer.html" %}
+    
+</body>
+</html>
