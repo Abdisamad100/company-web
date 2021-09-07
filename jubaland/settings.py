@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'quality',
-    'bootstrap4'
+    'bootstrap4',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -78,8 +82,10 @@ WSGI_APPLICATION = 'jubaland.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'juba',
+        'USER': 'moringa',
+    'PASSWORD':'12345',
     }
 }
 
@@ -103,12 +109,18 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
+cloudinary.config( 
+  cloud_name = "duwcyaitg", 
+  api_key = "845663342138117", 
+  api_secret = "BPb5u0vZfuqvk0ZKWSJgTlLDhPg" 
+)
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 
