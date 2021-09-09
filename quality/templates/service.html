@@ -1,151 +1,167 @@
 {%extends 'base.html'%}
 {% load static %}
+
 {% block content %}
 
-<!-- Carousel 100% Fullscreen -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="item bg bg1 active">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Example headline.</h1>
-            <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="item bg bg2">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="item bg bg1">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-  </div>
-  <!-- /end Carousel 100% Fullscreen -->
-<!-- Main Banner Starts -->
-<div class="main-banner services" style="background-color: tomato;height: 200px;">
-    <div class="container">
-        <h2 style="text-align: center; padding-top: 100px;"><span>OUR SERVICES</span></h2>
-    </div>
-</div>
-<br>
-<!-- Main Banner Ends -->
 
-<!-- Main Container Starts -->
-<div class="container main-container">
-<!-- Nested Row Starts -->
-    <div class="row">
-    <!-- Mainarea Starts -->
-        <div class="col-md-9 col-xs-12">
-            <div class="news-post-list">
-                <article class="news-post">
-                    
-                    <div class="inner">
-                        <h4>Quality control service</h4>
-                        
-                        <p align="justify">
-                            It is the policy of the Jubaland Quality Control Services (JQCS) to provide inspection services that consistently meet or exceed requirements of our Customers. We achieve this goal by implementing Quality Management Systems that conforms to ISO/IEC 17020 and emphasis:								</p>
-                        <p align="justify">
-                            Professionalism and Excellence;.								</p>
-                            <p align="justify">
-                                Professionalism and Excellence;.								</p>
-                                <p align="justify">
-                                    Human Resource Development;								</p>
-                                    <p align="justify">
-                                        Maintenance of a Work Culture which actively seeks opportunities for continual improvement; and							</p>            
-                                        <p align="justify">
-                                            The application of the State-of-Art Technologies.							</p>
-
-                    </div>
-                </article>
-            
-            </div>
-        
-        </div>
-    <!-- Mainarea Ends -->
-    <!-- Sidearea Starts -->
-        <div class="col-md-3 col-xs-12">
-
-            <h4 class="side-heading1 top">Important</h4>
-            <ul class="list-unstyled list-style-1">
-                <li><a href="about-us.html" title="about us">About Us</a></li>
-                <li><a href="manufacturing.html" title="manufacturing">Manufacturing</a></li>
-                <li><a href="marketing-distribution.html" title="marketing and distribution">Marketing + Distribution</a></li>
-                <li><a href="quality-assurance.html" title="quality assurance">Quality Assurance</a></li>
-                <li><a href="contacts.html" title="contacts">Contacts</a></li>
-                
-            </ul>
-            <h4 class="side-heading1 top">Membership</h4>
-            <ul class="list-unstyled list-style-1">
-                <li>
-                <img src="assets/fkpm.jpg"> <img src="assets/eapm.jpg"> <img src="assets/kam.jpg">
-                </li>
-                
-            </ul>
-        </div>
-    <!-- Sidearea Ends -->
-    </div>
-<!-- Nested Row Ends -->
-</div>
-<!-- Main Container Ends -->
-
-
-<div class="container main-container">
-    <!-- Nested Row Starts -->
-        <div class="row">
-        <!-- Mainarea Starts -->
-            <div class="col-md-9 col-xs-12">
-                <div class="news-post-list">
-                    <article class="news-post">
-                        
-                        <div class="inner">
-                            <h4>Industrial sector</h4>
-                            
-                            <p align="justify">
-                            Skylight Chemicals is a leading QA/GMP contract service provider of integrated chemistry, drug development and manufacturing services to the pharmaceutical and biotechnology industries. We are experts in medicinal chemistry, process development and reaction optimization through to QA/GMP API production and sterile fill-finish services.  Skylight Chemicals brings experience to every customer project and we emphasize quality, speed and flexibility. We can accelerate your Drug Discovery and Development Program by integrating process development, API manufacturing and finish dose manufacturing all at a single location.								</p>
-                            <p align="justify">
-                            Skylight Chemicals has the competence, flexibility and facilities to take on challenging projects which require custom tailored processes. With a broad range of expertise and technologies available, Skylight Chemicals offers support and services ranging from development and procurement to full-scale manufacturing, distribution, tech transfer, stability studies, and life cycle management. In addition to human pharmaceuticals, Recipharm can also supply medical devices and veterinary products.								</p>
-    
-    
-                        </div>
-                    </article>
-                
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+        </script>
+       <!--  <script type="text/javascript">
+            $(document).ready(function(){
+            $('.btn').click(function(){
+            $('nav').toggleClass('active');
+            })
+            $('ul li').click(function(){
+            $(this).siblings().removeClass('active')
+            $(this).toggleClass('active')
+            })
+            })
+        </script> -->
+    </head>
+    <body>
+       <br><br>
+        <!--slider-1-->
+        <div class="slider-container slider-container-01">
+            <div class="slider">
+                <div class="item-1">
+                    <h2 class="item-header">Example headline.</h2>
+                    <div class="box box-shadow--style-1">
+                      <!-- <img src='http://unsplash.it/500/500?random&gravity=center' alt=''/> -->
+                  </div>
+                    <p class="item-para">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <button class="Slider-btn-1">Sing up today</button>
                 </div>
-            
-            </div>
-        <!-- Mainarea Ends -->
-        <!-- Sidearea Starts -->
-            <div class="col-md-3 col-xs-12">
-    
+                <div class="item-2">
+                    <h2 class="item-header">Another example headline.</h2>
+                    <div class="box box-shadow--style-1">
+                      <!-- <img src='http://unsplash.it/500/500?random&gravity=center' alt=''/> -->
+                  </div>
+                    <p class="item-para">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <button class="Slider-btn-1">Lern more</button>
+                </div>
+                <div class="item-3">
+                    <h2 class="item-header">One more for good measure.</h2>
+                    <div class="box box-shadow--style-1">
+                      <!-- <img src='http://unsplash.it/500/500?random&gravity=center' alt=''/> -->
+                  </div>
+                    <p class="item-para">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <button class="Slider-btn-1">Browse gallery</button>
+                </div>
                 
             </div>
-        <!-- Sidearea Ends -->
+            <div id="active">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
         </div>
-    <!-- Nested Row Ends -->
-    </div>
-    <!-- Main Container Ends -->
-
-
+        <!--grid-round-1-->
+        <div class="wrapper round-img-container--outer">
+            <div class="round-img-container--inner">
+                <div class="round-img--single round-img--single-1 grid zero-pic-1">
+                    <div class="round-img round box-shadow--style-2"></div>
+                    <h2 class="round-img--heading">Heading</h2>
+                    <p class="round-img--text">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.
+                         Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, 
+                         vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <a class="btn-secondary" href= "#">View detail &#187; </a>
+                </div>
+                <!--grid-round-2-->
+                <div class="round-img--single round-img--single-2 grid zero-pic-2">
+                    <div class="round-img round box-shadow--style-2"></div>
+                    <h2 class="round-img--heading">Heading</h2>
+                    <p class="round-img--text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, 
+                        eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. 
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    <a class="btn-secondary" href="#">View detail &#187; </a>
+                </div>
+                <!--grid-round-3-->
+                <div class="round-img--single round-img--single-3 grid zero-pic-3">
+                    <div class="round-img round box-shadow--style-2"></div>
+                    <h2 class="round-img--heading">Heading</h2>
+                    <p class="round-img--text secondary-font">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, 
+                        egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus,
+                         tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet </p>
+                    <a class="btn-secondary" href="#">View detail &#187; </a>
+                </div>
+            </div>	
+        </div>
+        <div class="wrapper">
+            <hr class="hr-line"></hr>
+        </div>
+        <!--card-container-1-->
+        <div class="wrapper container card card-1">
+            <div class="base-heading card-heading card-heading-1">
+                <!-- <div class="box"></div> -->
+                <div class="box box-shadow--style-1">
+                    <img src='http://unsplash.it/500/500?random&gravity=center' alt=''/>
+                </div>
+                <div class="heading">
+                    <h1>First featurette heading.</h1> 
+                    <h2 class="headding-h2">It’ll blow your mind.</h2>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+            </div>	
+        </div>
+        <!--card-container-2-->
+        <div class="wrapper">
+            <hr class="hr-line"></hr>
+        </div>
+        <div class="wrapper container card card-2">
+            <div class="base-heading card-heading card-heading-2">
+                <div class="box box-shadow--style-1">
+                    <img src='http://unsplash.it/500/500?random&gravity=east' alt=''/>
+                </div>
+                <div class="heading">
+                    <h1>Oh yeah, it’s that good.</h1> 
+                    <h2 class="headding-h2">See for yourself.</h2>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum 
+                        id ligula porta felis euismod semper. 
+                        Praesent commodo cursus magna,
+                        vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+            </div>	
+        </div>
+        <div class="wrapper">
+            <hr class="hr-line"></hr>
+        </div>
+        <!--card-container-3-->
+        <div class="wrapper container card card-3">
+            <div class="base-heading card-heading card-heading-3">
+                <div class="box box-shadow--style-1">
+                    <img src='http://unsplash.it/500/500?random&gravity=west' alt=''/>
+                </div>
+                <div class="heading">
+                    <h1>And lastly, this one.</h1> 
+                    <h2 class="headding-h2">Checkmate.</h2>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla.
+                         Vestibulum id ligula porta felis euismod semper. 
+                         Praesent commodo cursus magna, vel scelerisque nisl consectetur. 
+                         Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+            </div>	
+        </div>
+       
+    </body>
+</html>
  
+   
+    
+ 
+  <br><br><br><br><br><br><br>
 
+
+</body>
+
+</html>
 {%endblock%}
