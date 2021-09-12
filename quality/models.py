@@ -108,7 +108,7 @@ class jobs(models.Model):
     '''
     title = models.CharField(max_length=30)
     role = models.TextField()
-    desc= models.CharField(max_length=300)
+    desc= models.TextField()
     salary=models.CharField(max_length=30)
     post_date = models.DateTimeField(auto_now_add=True)
     
@@ -117,3 +117,33 @@ class jobs(models.Model):
         String representation
         '''
         return self.title
+
+    def save_job(self):
+        '''
+        A method that saves jobs
+        '''
+        return self.save()    
+
+
+class Contact(models.Model):
+    '''
+    A class that determines the image model characteristics
+    '''
+    name = models.CharField(max_length=30)
+    email =models.EmailField(max_length=254)
+    contact= models.CharField(max_length=30)
+    subject=models.CharField(max_length=30)
+    comment=models.CharField(max_length=300)
+    
+    
+    def __str__(self):
+        '''
+        String representation
+        '''
+        return self.name
+
+    def save_Contact(self):
+        '''
+        A method that saves contact
+        '''
+        return self.save()       

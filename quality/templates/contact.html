@@ -1,0 +1,46 @@
+{%extends 'base.html'%}
+{% load bootstrap4 %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container">
+    <div class="hy">
+        <h1 style="text-align: center;">Contact us</h1>
+    </div>
+    <br><br>
+<div class="row">
+    <div class="col-md-6">
+
+<form method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <a href="{% url 'thank' %}"><input type="submit" value="Submit" style="background-color: #008CBA;border-radius: 20px; box-shadow: none; border: none; width: 200px; height: 50px;color: aliceblue;text-align: center;"></a> 
+    
+    
+  </form>
+</div>
+<div class="col-md-2"></div>
+<div class="col-md-4"> <!-- Address Starts -->
+    
+    <!-- Box #1 Starts -->
+        <div class="block-1">
+           
+            <h4>Come and Visit</h4>
+            <ul class="list-unstyled">
+                <li>caymis road.</li>
+                <li>P.O Box 2272, kismayo, somalia.</li>
+                <li>+ 254 71067829 </li>
+                <li>+ 254 726173245 </li>
+                <li>info@jubalandqualitycontrolservice.com </li>
+            </ul>
+        </div>
+    <!-- Box #1 Ends -->
+
+    
+<!-- Address Ends -->
+</div>
+</div>
+</div>
+<!-- Contact Content Ends -->
+
+{%endblock%}

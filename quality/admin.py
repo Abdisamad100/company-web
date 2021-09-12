@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Image, Location, category
+from .models import Image, Location, category,jobs,Contact
 
 # Register your models here.
 
@@ -9,3 +9,6 @@ class ImageAdmin(admin.ModelAdmin):
 admin.site.register(Image, ImageAdmin)
 admin.site.register(Location)
 admin.site.register(category)
+admin.site.register(jobs)
+admin.site.register(Contact)
+

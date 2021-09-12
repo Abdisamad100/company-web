@@ -3,6 +3,9 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import *
 import datetime as dt
+from .forms import ContactForm
+from django.contrib import messages
+
 
 
 # Create your views here.
@@ -17,11 +20,24 @@ def about(request):
 def service(request):
     return render(request, 'service.html')
 
+def thank(request):
+    return render(request, 'thank.html')
+
 def contact(request):
-    return render(request, 'contact.html')
+    if request.method == 'GET': 
+        form = ContactForm()
+    else:
+       form = ContactForm(request.POST)
+       if form.is_valid():
+        form.save()
+        
+
+    return render(request, "contact.html",{'form': form })
+    
 
 def job(request):
-    return render(request, 'job.html')
+    job = jobs.objects.all()
+    return render(request, 'jobs.html', {"job":job})
 
 
 

@@ -16,7 +16,7 @@
 
 
 /* .main-header{
-    background: linear-gradient(#48649f,#3b5998);
+    background-color: #008CBA;
 } */
 /* .welcome-area{
     padding-top: 100px;
@@ -91,13 +91,13 @@ body {
 
 } */
 
-h1,
+/* h1,
 h2,
 h3 {
 	margin: 0 0 .5rem;
 	font-size: 50px;
 	font-weight: 400;
-}
+} */
 .headding-h2 {
 	color: #6c757d !important;
 }

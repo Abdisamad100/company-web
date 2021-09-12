@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'quality',
     'bootstrap4',
     'cloudinary',
+    'crispy_forms',
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -80,14 +82,14 @@ WSGI_APPLICATION = 'jubaland.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'boom',
-#         'USER': 'eid12345',
-#     'PASSWORD':'12345',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'juba',
+        'USER': 'moringa',
+    'PASSWORD':'12345',
+    }
+}
 
 
 # Password validation
