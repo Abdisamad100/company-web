@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <title>Document</title>
 </head>
@@ -39,7 +39,7 @@
                         <hr>
                     </div> 
                     
-                <div class="bs-example">
+                 <div class="bs-example">
                 <nav class="navbar navbar-expand-lg navbar-light .bg-transparent">
                     <a href="#" class="navbar-brand">
                         <img src="{% static 'image/jubaland-logo.png' %}"  height="150"  alt="CoolBrand">
@@ -47,21 +47,39 @@
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </button> 
             
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                     <div class="navbar-collapse collapse justify-content-end " id="navigationbar">
                         <div class="navbar-nav">
-                            <a href="{% url 'welcome' %}" class="nav-item nav-link active">HOME</a>
-                            <a href="{% url 'about' %}" class="nav-item nav-link active">ABOUT</a>
-                            
-                            <a href="{% url 'service' %}"class="nav-item nav-link active">SERVICES</a>
-                            <a href="{% url 'myPhotos' %}" class="nav-item nav-link active">OUR TEAM</a>
-                            <a href="{% url 'job' %}" class="nav-item nav-link active">JOBS</a>
-                            <a href="{% url 'contact' %}" class="nav-item nav-link active">CONTACT</a>
-                            
+                            <ul class="nav navbar-nav ">
+                            <li><a href="{% url 'welcome' %}" class="nav-item nav-link active">HOME</a></li>
+                            <li><a href="{% url 'about' %}" class="nav-item nav-link active">ABOUT</a></li>
+                            <li><a href="{% url 'service' %}"class="nav-item nav-link active">SERVICES</a></li>
+                            <li><a href="{% url 'myPhotos' %}" class="nav-item nav-link active">OUR TEAM</a></li>
+                            <li><a href="{% url 'job' %}" class="nav-item nav-link active">JOBS</a></li>
+                            <li><a href="{% url 'contact' %}" class="nav-item nav-link active">CONTACT</a></li>
+                        </ul>
                         </div>
                         
-                    </div>
+                    </div>  
+                    <!-- <div class="navbar navbar-default">
+                        <div class="navbar-header">
+                          <a class="navbar-brand" href="#"> <img src="{% static 'image/jubaland-logo.png' %}"  height="150"  alt="CoolBrand">
+                            JUBALAND QUALITY CONTROL SERVICE</a>
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <div class="navbar-nav ">
+                          <ul class="nav navbar-nav ">
+                            <li class="active"><a href="{% url 'welcome' %}">Home</a></li>
+                            <li><a href="#">Your Links</a></li>
+                            <li><a href="#">Your Links</a></li>
+                          </ul>
+                        </div>
+                      </div> -->
                 </nav>
             </div>
             

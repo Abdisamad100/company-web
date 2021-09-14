@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Image, Location, category,jobs,Contact
+from .models import Image, Location, category,jobs,Contact, Video
 
 # Register your models here.
 
@@ -11,4 +11,5 @@ admin.site.register(Location)
 admin.site.register(category)
 admin.site.register(jobs)
 admin.site.register(Contact)
+admin.site.register(Video)
 

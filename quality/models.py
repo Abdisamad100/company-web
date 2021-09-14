@@ -133,7 +133,7 @@ class Contact(models.Model):
     email =models.EmailField(max_length=254)
     contact= models.CharField(max_length=30)
     subject=models.CharField(max_length=30)
-    comment=models.CharField(max_length=300)
+    comment=models.TextField()
     
     
     def __str__(self):
@@ -147,3 +147,13 @@ class Contact(models.Model):
         A method that saves contact
         '''
         return self.save()       
+
+
+class Video(models.Model):
+    caption=models.CharField(max_length=100)
+    video=models.FileField(upload_to="video/%y")
+
+
+    def __str__(self):
+        return self.caption
+               

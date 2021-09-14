@@ -10,7 +10,8 @@ from django.contrib import messages
 
 # Create your views here.
 def welcome(request):
-    return render(request, 'welcome.html')
+    video=Video.objects.all()
+    return render(request, 'welcome.html',{'video': video})
 
 
 
@@ -30,9 +31,11 @@ def contact(request):
        form = ContactForm(request.POST)
        if form.is_valid():
         form.save()
+        messages.success(request,"Thank you for contacting us")
+        return redirect('thank')
         
 
-    return render(request, "contact.html",{'form': form })
+    return render(request, "contact.html",{'form': form})
     
 
 def job(request):

@@ -2,20 +2,30 @@
 {% block content %}
 
 <div class="container">
-    <a href="#" class="btn btn-sm btn-info mb-2">New job</a>
 <div class="row">
     {% for jobs in job %}
+    {% if jobs %}
     <div class="col-md-4">
         <div class="card mb-4" style="min-height:340px">
             
             <div class="card-body">
-                <h5 class="card-title">{{jobs.title }}</h5>
-                <p class="card-text">{{jobs.desc}}</p>
+                <h3 class="card-title"> Title:{{jobs.title }}</h3>
+                <p class="card-text">Role:{{jobs.role}}</p>
+                <p class="card-text">Desc:{{jobs.desc}}</p>
+                <p class="card-text">Salary:{{jobs.salary}}</p>
+                <p class="card-text">Date posted:{{jobs.post_date}}</p>
                 
             </div>
         </div>
     </div>
+
+    {% else %}
+    <p>No jobs adverised</p>
+    {% endif %}
     {% endfor %}
+    
+    
+    
 </div>
 </div>
 
