@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import *
 import datetime as dt
-from .forms import ContactForm
+from .forms import ContactForm,ApplicationForm
 from django.contrib import messages
 
 
@@ -42,7 +42,19 @@ def job(request):
     job = jobs.objects.all()
     return render(request, 'jobs.html', {"job":job})
 
+def application(request):
+    if request.method == 'POST':
+        form = ApplicationForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('welcome')
+    else:
+        form = ApplicationForm()
+    return render(request, 'application.html', {
+        'form': form
+    })    
 
+ 
 
 # Create your views here.
 def my_photos(request):

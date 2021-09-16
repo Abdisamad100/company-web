@@ -85,8 +85,8 @@ WSGI_APPLICATION = 'jubaland.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'eid',
+        'NAME': 'juba',
+        'USER': 'moringa',
     'PASSWORD':'12345',
     }
 }

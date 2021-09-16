@@ -156,4 +156,28 @@ class Video(models.Model):
 
     def __str__(self):
         return self.caption
-               
+
+
+class Application(models.Model):
+    '''
+    A class that determines the image model characteristics
+    '''
+    name = models.CharField(max_length=30)
+    nationality = models.CharField(max_length=30, blank=True, null=True)
+    email =models.EmailField(max_length=254)
+    contact= models.IntegerField()
+    qualifications=models.TextField()
+    cv= models.FileField()
+    
+    
+    def __str__(self):
+        '''
+        String representation
+        '''
+        return self.name
+
+    def save_Application(self):
+        '''
+        A method that saves application
+        '''
+        return self.save()                      
