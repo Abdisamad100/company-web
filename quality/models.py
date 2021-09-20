@@ -157,6 +157,13 @@ class Video(models.Model):
     def __str__(self):
         return self.caption
 
+    def save_Video(self):
+        '''
+        A method that saves contact
+        '''
+        return self.save()       
+    
+
 
 class Application(models.Model):
     '''
