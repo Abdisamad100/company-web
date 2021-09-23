@@ -3,26 +3,7 @@
     padding-left: 50px;
 
 }
-/* *{
-    box-sizing: border-box;
-} */
-/* .navbar-nav a{
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    text-transform: capitalize;
-    padding: 17px;
 
-} */
-
-
-/* .main-header{
-    background-color: #008CBA;
-} */
-/* .welcome-area{
-    padding-top: 100px;
-    margin-top: 100px;
-    background-color: #3b5998;
-} */
 
 .main-footer{
     /* background-color:#FFD77C ; */
@@ -47,13 +28,15 @@
   }
 
   .container  {
-	position: relative;
+	
   	background: #fff;
 	height: auto;
   	margin: 2% auto;
   	padding: 2%;
   	width: 80%;
 }
+
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -88,12 +71,7 @@
     display: none;
   }
 
-  /* |bbbbb */
-  /* html, body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  } */
+
   
   .untitled {
     position: absolute;

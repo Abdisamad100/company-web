@@ -7,17 +7,19 @@
     {% if job %}
     {% for jobs in job %}
     <div class="col-md-4">
-        <div class="card mb-4" style="min-height:340px">
+        
             
-            <div class="card-body">
                 <h3 class="card-title"> {{jobs.title }}</h3>
+                <br>
                 <p class="card-text"><strong>Role:</strong>{{jobs.role}}</p>
+                <br>
                 <p class="card-text"><strong>Desc:</strong>{{jobs.desc}}</p>
+                <br>
                 <p class="card-text"><strong>Salary:</strong>{{jobs.salary}}</p>
                 <p class="card-text">Date posted:{{jobs.post_date}}</p>
                 
                 <a href="{% url 'application' %}"><button type="button" class="btn btn-primary">click here to apply</button></a>
-            </div>
+          
         </div>
     </div>
     {% endfor %}
@@ -31,40 +33,7 @@
 </div>
 </div>
 
-<style>
-      .card{
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  padding: 14px 80px 18px 36px;
-  cursor: pointer;
-}
 
-.card:hover{
-     transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
-
-.card h3{
-  font-weight: 600;
-}
-
-.card img{
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  max-height: 120px;
-}
-
-
-
-@media(max-width: 990px){
-  .card{
-    margin: 20px;
-  }
-} 
-</style>
 
 
 {% endblock %}
