@@ -28,7 +28,7 @@
   }
 
   .container  {
-	
+	position: relative;
   	background: #fff;
 	height: auto;
   	margin: 2% auto;
