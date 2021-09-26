@@ -140,11 +140,7 @@ cloudinary.config(
   api_key = "845663342138117", 
   api_secret = "BPb5u0vZfuqvk0ZKWSJgTlLDhPg" 
 )
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'duwcyaitg',
-    'API_KEY': '845663342138117',
-    'API_SECRET': 'BPb5u0vZfuqvk0ZKWSJgTlLDhPg'
-}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
