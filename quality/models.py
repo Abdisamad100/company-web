@@ -1,5 +1,7 @@
 from django.db import models
 import datetime as dt
+from cloudinary_storage.storage import VideoMediaCloudinaryStorage
+from cloudinary_storage.validators import validate_video
 
 from cloudinary.models import CloudinaryField
 
@@ -153,6 +155,7 @@ class Contact(models.Model):
 class Video(models.Model):
     caption=models.CharField(max_length=100)
     video=models.FileField(upload_to="media")
+    
 
 
     def __str__(self):
