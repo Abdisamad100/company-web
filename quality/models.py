@@ -1,7 +1,6 @@
 from django.db import models
 import datetime as dt
-from cloudinary_storage.storage import VideoMediaCloudinaryStorage
-from cloudinary_storage.validators import validate_video
+
 
 from cloudinary.models import CloudinaryField
 
