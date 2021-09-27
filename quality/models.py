@@ -3,6 +3,8 @@ import datetime as dt
 
 
 from cloudinary.models import CloudinaryField
+from cloudinary_storage.storage import VideoMediaCloudinaryStorage
+from cloudinary_storage.validators import validate_video
 
 
 # Create your models here.
@@ -153,7 +155,8 @@ class Contact(models.Model):
 
 class Video(models.Model):
     caption=models.CharField(max_length=100)
-    video=models.FileField(upload_to="media")
+    video = models.FileField(upload_to='videos/', blank=True, storage=VideoMediaCloudinaryStorage(),
+                              validators=[validate_video])
     
 
 

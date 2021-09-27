@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'bootstrap4',
     'cloudinary',
     'crispy_forms',
+    'cloudinary_storage',
+    
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -141,6 +143,11 @@ cloudinary.config(
   api_secret = "BPb5u0vZfuqvk0ZKWSJgTlLDhPg" 
 )
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'duwcyaitg',
+    'API_KEY': '845663342138117',
+    'API_SECRET': 'BPb5u0vZfuqvk0ZKWSJgTlLDhPg'
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -165,6 +172,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+STATICFILES_STORAGE = 'cloudinary_storage.storage.VideoMediaCloudinaryStorage'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
